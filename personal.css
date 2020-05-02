@@ -76,7 +76,7 @@ transform:translate(50%,50%) rotate(45deg);
     width:100%;
     min-height:60vh;
     padding:100px;
-    background:url(images/hello.jpg);  
+    background:url('images/hello.jpg');  
     background-size:cover; 
     display:flex;
     align-items:center;
