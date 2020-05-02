@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="personal.css">
+    </head>
+    <body>
+     <section class="banner" id="sec">
+         
+         <header>
+             <a href="#" class="logo">R<span>N</span></a>
+             <div id="toggle" onclick="toggle()"></div>
+                </header>
+             <div class="content">
+                 <h2>Hello World!<br>I'm <span>Ramanathan</span></h2>
+                 <p>I am a developing FullStack Developer in the EverGrowing Web Programming World.<br>
+                     As said by Jon John :<span class="quotes"> First, solve the problem. Then, write the code.</span> I always strive towards it.
+                 </p>
+                   
+            </div>
+            <ul class="sci">
+            <li><a href="https://www.facebook.com/profile.php?id=100016818522222"><img src="facebook.png"></a></li> 
+            <li><a href="https://github.com/RamNathan691"><img src="github.png"></a></li>
+            <li><a href="#"><img src="linkedin.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            </ul>
+          
+    </section>
+    <div id="navigator">
+        <ul>
+            <div class="sel">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Interns">Internship</a></li>
+            </ul>
+        </ul>
+        </div>
+       
+    <div class="skills" id="skills">
+        <p class="heading"><span>Skills</span> And <span>Languages</span> Known </p><br>
+        <div class="skillset">
+       
+        <div class="box">
+            <div class="content1">
+            <img src="python.png">
+            <p>Certifications: Udemy</p>
+            </div>
+    </div>
+    <div class="box">
+        <div class="content1">
+            <img src="c.png">
+            <p>C Basics<br>
+            C Advanced</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="content1">
+            <img src="javaScript.png">
+            <p>JavaScript</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="content1">
+            <img src="django.png">
+            <p>Certifications: Udemy</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="content1">
+            <img src="nodejs.jpg">
+            <p>Certifications: Udemy</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="content1">
+            <img src="html.png">
+            <p> HTML 5 & Basics</p>
+        </div>
+    </div>
+  
+    <div class="box">
+        <div class="content1">
+            <img src="css.png">
+            <p> Basics,Flex & Grids </p>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="projects" id="Projects">
+        
+            <p class="heading"><span>P</span>rojects</p><br>
+            <div class="box1">
+            <div class="content1">
+            An ecommerce-website:<br>
+                <p>Done using the<span> Django</span> as the backend framework and using <span>postgresql</span> as the database.To excerise to build
+                more knowledge in Django which involves creating sessions and making the cart ajax it was a fun project. 
+                </p>
+            </div>
+            </div>
+            <div class="box1">
+            <div class="content1">
+                An Bootcamp Finder:<br>
+               <p>This is done using the <span>ExpressJS</span> as the http framework and <span>MongoDB</span> as the database.This a final project of
+                a course in udemy by Brad Traversy.</p>
+            </div>
+            </div>
+            <div class="box1">
+            <div class="content1">
+                Connectify:<br>
+                    <p>This project was basically done for <span>SIH(Smart India Hackthon)</span> which helps the startups to find their mentors.</p>
+            </div>
+            </div>        
+        </div>
+        <div class="interns" id="Interns">
+            <p class="heading"><span>I</span>nternShip</p><br>
+            <ul>
+                <li><p> <span>Q-Eventers</span><br>
+                Dec 2019-Jan 2020
+                </p></li>    
+                <li>
+                    <p> <span>FrontYard</span><br>
+                        March 2020 - Present
+                    </p>
+                </li>
+            
+                </ul>
+                </div>
+                <script
+                src="https://code.jquery.com/jquery-3.5.0.min.js"
+                integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+                crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+             var nav = document.getElementById('navigator');
+            sec.classList.toggle('active')
+            nav.classList.toggle('active')
+        
+        }
+            $(function () {
+                   
+                    $(".sel a").on('click', function () {
+                        $("html,body").animate({
+                            scrollTop: $($.attr(this, 'href')).offset().top
+                        }, 1000)
+                    })
+                })
+        </script>
+    </body>
+</html>
